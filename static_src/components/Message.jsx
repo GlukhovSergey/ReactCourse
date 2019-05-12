@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from "prop-types";
+import Chip from 'material-ui/Chip';
 
 
 export default class Message extends React.Component {
@@ -9,7 +10,7 @@ export default class Message extends React.Component {
 
     render() {
         return (
-            <div>{ this.props.text }</div>
+            <Chip style={{ margin: '5px' }}>{ this.props.text }</Chip>
         )
     }
 }
