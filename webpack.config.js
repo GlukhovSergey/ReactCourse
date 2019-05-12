@@ -44,15 +44,15 @@ module.exports = {
         ],
     },
 
-    // resolve: {
-    //     modules: [`${__dirname}/static_src`, 'node_modules'],
-    //     extensions: ['.js', '.jsx'],
-    // },
-    //
-    // watch: NODE_ENV === 'development',
-    // watchOptions: {
-    //     aggregateTimeout: 100,
-    // },
+    resolve: {
+        modules: [`${__dirname}/static_src`, 'node_modules'],
+        extensions: ['.js', '.jsx'],
+    },
+
+    watch: NODE_ENV === 'development',
+    watchOptions: {
+        aggregateTimeout: 100,
+    },
 
     // devtool: NODE_ENV === 'development' ? 'cheap-inline-module-source-map' : false,
 };

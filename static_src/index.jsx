@@ -1,12 +1,9 @@
-import './styles/styles.css';
-//import './test';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-const component = (innerHTML) =>  <h1>{ innerHTML }</h1>;
+import App from './components/App';
 
 ReactDOM.render(
-    component('Hello world'),
+    <App />,
     document.getElementById('root'),
 );
